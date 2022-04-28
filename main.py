@@ -7,7 +7,7 @@ from typing import Any
 def playMusic(music: str) -> None:
     ss: str = getOS()
     if ss == "Windows":
-       playsound(music)
+        playsound(music)
     elif ss == "Linux":
         os.system("mpg123 " + music)
     elif ss == "Darwin":
