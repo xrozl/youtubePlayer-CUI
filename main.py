@@ -22,7 +22,7 @@ def main() -> None:
         if url == "exit":
             break
         else:
-            ydl: Any = youtube_dl.YoutubeDL({'outtmpl': '%(id)s%(ext)s',
+            ydl: Any = youtube_dl.YoutubeDL({'outtmpl': '%(id)s',
                                         'postprocessors': [{
                                         'key': 'FFmpegExtractAudio',
                                         'preferredcodec': 'mp3',
